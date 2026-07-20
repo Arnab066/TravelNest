@@ -1,5 +1,6 @@
 import fs from 'fs';
-import { isLocalMock, localDbPath, defaultDbPath } from '../config/db.js';
+import { isLocalMock, localDbPath } from '../config/db.js';
+import { defaultDbData } from '../data/defaultData.js';
 import {
   MongooseUser,
   MongooseListing,
@@ -17,19 +18,10 @@ function readLocalDb() {
         return db;
       }
     }
-    if (fs.existsSync(defaultDbPath)) {
-      const defaultData = fs.readFileSync(defaultDbPath, 'utf-8');
-      return JSON.parse(defaultData);
-    }
-    return { users: [], listings: [], bookings: [], reviews: [] };
+    return defaultDbData;
   } catch (error) {
     console.error('Error reading local JSON database:', error);
-    if (fs.existsSync(defaultDbPath)) {
-      try {
-        return JSON.parse(fs.readFileSync(defaultDbPath, 'utf-8'));
-      } catch (e) {}
-    }
-    return { users: [], listings: [], bookings: [], reviews: [] };
+    return defaultDbData;
   }
 }
 

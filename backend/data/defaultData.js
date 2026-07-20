@@ -1,0 +1,191 @@
+export const defaultDbData = {
+  users: [
+    {
+      "_id": "c067a484899f21728bb4cb84",
+      "role": "guest",
+      "createdAt": "2026-07-08T16:33:37.400Z",
+      "name": "John Doe",
+      "email": "guest@travelnest.com",
+      "password": "$2a$10$gM5hqgiuKu84WLOutZ7bROpso69paSUaMPEz1kwR1uj1mV.OobEm."
+    },
+    {
+      "_id": "a5acbb4fa564f116b1bd1762",
+      "role": "host",
+      "createdAt": "2026-07-08T16:33:37.402Z",
+      "name": "Sarah Connor",
+      "email": "host@travelnest.com",
+      "password": "$2a$10$gM5hqgiuKu84WLOutZ7bROpso69paSUaMPEz1kwR1uj1mV.OobEm."
+    }
+  ],
+  listings: [
+    {
+      "_id": "2ec04874ae9488638d84a81b",
+      "images": [
+        "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?auto=format&fit=crop&w=800&q=80"
+      ],
+      "amenities": [
+        "Wifi",
+        "Kitchen",
+        "Hot Tub",
+        "Fireplace",
+        "Ski access",
+        "Heating"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 12,
+      "createdAt": "2026-07-08T16:33:37.403Z",
+      "title": "Alpine Meadow A-Frame Chalet",
+      "description": "Escape to a secluded wooden A-frame chalet in the heart of the Swiss Alps. Features an outdoor hot tub, fireplace, panoramic floor-to-ceiling windows overlooking snow-capped peaks, and ski-in/ski-out access.",
+      "price": 245,
+      "location": "Zermatt, Switzerland",
+      "category": "Cabins",
+      "host": "a5acbb4fa564f116b1bd1762",
+      "maxGuests": 4,
+      "bedrooms": 2,
+      "beds": 3,
+      "bathrooms": 2
+    },
+    {
+      "_id": "4cb0e0dfd1e65e21c338c4bc",
+      "images": [
+        "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80"
+      ],
+      "amenities": [
+        "Wifi",
+        "Air Conditioning",
+        "Infinity Pool",
+        "Kitchen",
+        "Ocean View",
+        "Breakfast included"
+      ],
+      "rating": 5,
+      "reviewsCount": 18,
+      "createdAt": "2026-07-08T16:33:37.404Z",
+      "title": "Sun-Kissed Oia Caldera Cliffside Villa",
+      "description": "Perched on the cliffs of Santorini, this whitewashed cave villa offers breathtaking panoramic sunset views over the Aegean Sea. Includes a private infinity plunge pool and beautiful traditional Cycladic architecture.",
+      "price": 380,
+      "location": "Oia, Greece",
+      "category": "Luxury",
+      "host": "a5acbb4fa564f116b1bd1762",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "beds": 1,
+      "bathrooms": 1
+    },
+    {
+      "_id": "bf24b95bf0c4bb19d6bc8332",
+      "images": [
+        "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80"
+      ],
+      "amenities": [
+        "Wifi",
+        "Tatami Rooms",
+        "Hinoki Soaking Tub",
+        "Zen Garden",
+        "Kitchen",
+        "Tea Set"
+      ],
+      "rating": 4.85,
+      "reviewsCount": 8,
+      "createdAt": "2026-07-08T16:33:37.405Z",
+      "title": "Kyoto Bamboo Forest Garden House",
+      "description": "Immerse yourself in traditional Japanese culture in this meticulously restored Machiya house, surrounded by a peaceful Zen rock garden and whispering bamboo stalks. Features custom tatami rooms and a Hinoki cypress soaking tub.",
+      "price": 185,
+      "location": "Kyoto, Japan",
+      "category": "Trending",
+      "host": "a5acbb4fa564f116b1bd1762",
+      "maxGuests": 3,
+      "bedrooms": 2,
+      "beds": 2,
+      "bathrooms": 1.5
+    },
+    {
+      "_id": "e39c2d8bd620d5c643aa76ec",
+      "images": [
+        "https://images.unsplash.com/photo-1546548970-71785318a17b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80"
+      ],
+      "amenities": [
+        "Solar Power",
+        "Hammock",
+        "Outdoor Shower",
+        "Breakfast included",
+        "Guide booking"
+      ],
+      "rating": 4.78,
+      "reviewsCount": 22,
+      "createdAt": "2026-07-08T16:33:37.406Z",
+      "title": "Lush Rainforest Eco-Treehouse",
+      "description": "Live among the birds and monkeys in this multi-level eco-friendly treehouse suspended 30 feet above the jungle floor. Completely open-concept layout allows you to feel truly connected to the vibrant Costa Rican rainforest.",
+      "price": 150,
+      "location": "Manzanillo, Costa Rica",
+      "category": "Treehouses",
+      "host": "a5acbb4fa564f116b1bd1762",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "beds": 1,
+      "bathrooms": 1
+    },
+    {
+      "_id": "3c08ed53c65eb173e02d2834",
+      "images": [
+        "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+      ],
+      "amenities": [
+        "Wifi",
+        "Air Conditioning",
+        "Glass floor panel",
+        "Snorkeling gear",
+        "Mini Bar",
+        "Ocean View"
+      ],
+      "rating": 4.95,
+      "reviewsCount": 15,
+      "createdAt": "2026-07-08T16:33:37.406Z",
+      "title": "Sunset Overwater Turquoise Bungalow",
+      "description": "Walk straight from your living room into crystal clear ocean waters. This Maldives luxury overwater bungalow features a private sun deck, glass floor viewing panel, and direct access to active coral reefs.",
+      "price": 520,
+      "location": "Male Atoll, Maldives",
+      "category": "Beachfront",
+      "host": "a5acbb4fa564f116b1bd1762",
+      "maxGuests": 2,
+      "bedrooms": 1,
+      "beds": 1,
+      "bathrooms": 1
+    },
+    {
+      "_id": "5050e2ec783a9390a031cb10",
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+      ],
+      "amenities": [
+        "Wifi",
+        "Gym access",
+        "Rooftop Deck",
+        "Kitchen",
+        "Workspace",
+        "Washing Machine"
+      ],
+      "rating": 4.88,
+      "reviewsCount": 31,
+      "createdAt": "2026-07-08T16:33:37.407Z",
+      "title": "Sleek Manhattan Glass Penthouse",
+      "description": "Experience New York City from above. This ultra-modern penthouse features floor-to-ceiling windows with unobstructed views of the Manhattan skyline, a private rooftop deck, and top-of-the-line appliances.",
+      "price": 450,
+      "location": "New York, USA",
+      "category": "Luxury",
+      "host": "a5acbb4fa564f116b1bd1762",
+      "maxGuests": 4,
+      "bedrooms": 2,
+      "beds": 2,
+      "bathrooms": 2
+    }
+  ],
+  bookings: [],
+  reviews: []
+};

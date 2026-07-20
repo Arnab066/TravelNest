@@ -26,11 +26,18 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// API Routes
+// API Routes (supports both /api/path and /path for Vercel serverless rewrites)
 app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes);
+
 app.use('/api/listings', listingRoutes);
+app.use('/listings', listingRoutes);
+
 app.use('/api/bookings', bookingRoutes);
+app.use('/bookings', bookingRoutes);
+
 app.use('/api/reviews', reviewRoutes);
+app.use('/reviews', reviewRoutes);
 
 // Base Route
 app.get('/', (req, res) => {
