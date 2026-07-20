@@ -12,8 +12,7 @@
   "dependencies": {
     "lucide-react": "^0.344.0",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "travelnest-root": "file:.."
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
