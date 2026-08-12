@@ -1,7 +1,6 @@
 # TravelNest – Property Booking Platform
 
 TravelNest is a premium, full-stack vacation rental and lodging reservation platform. Built using **Node.js**, **Express**, **React.js**, and a **dual-mode Database adapter (MongoDB / Local JSON Database)**, TravelNest offers a responsive interface with role-based access for guests and hosts.
-
 ---
 
 ## ✨ Features
